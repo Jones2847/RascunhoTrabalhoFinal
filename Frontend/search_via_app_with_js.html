@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My search tool</title>
+    <script src="{{ url_for('static', filename='most_popular_movies.js') }}"></script>
+</head>
+
+<body>
+    <form id="id_form_search"
+          action="/search"
+    >
+
+
+        <input type="text" id="query_google" placeholder="Top 5 movies" name = "q">
+                        
+            <input type="submit" value="go search">
+
+            <section id="id_section_search_feedback"></section>
+    </form>
+</body>
+</html>
